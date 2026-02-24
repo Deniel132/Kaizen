@@ -20,7 +20,7 @@ public class Main {
 
 		Lutar lutas = new Lutar();
 		lutas.MarcarLuta(Lutadores.get(5),Lutadores.get(0));
-		lutas.Lutar(2);
+		lutas.RealizarLuta(2);
 
 		Lutadores.get(0).Resultados();
 		Lutadores.get(5).Resultados();

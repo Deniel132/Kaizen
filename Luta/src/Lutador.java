@@ -116,6 +116,7 @@ public class Lutador {
 		System.out.println("\n==================");
 		System.out.println("Nome.........: "+ getNome());
 		System.out.println("Nacionalidade: " + getNacionalidade());
+		System.out.println("Idade: " + getIdade());
 		System.out.println("Peso.........: " + getPeso());
 		System.out.println("Altura.......: " + getAltura());
 		System.out.println("Categoria....: " + getCategoria());

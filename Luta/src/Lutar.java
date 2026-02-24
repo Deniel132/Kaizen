@@ -43,7 +43,7 @@ public class Lutar {
 
 	}
 
-	public void Lutar(int Rounds){
+	public void RealizarLuta(int Rounds){
 		setRounds(Rounds);
 		Random aleatorio = new Random();
 		int vitoria;
