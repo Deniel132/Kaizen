@@ -7,10 +7,15 @@ public class Main {
 
 		controle.LigarTV();
 		controle.Reprodusir();
+		controle.Mutar();
+		controle.Desmutar();
+		controle.AlmentarSom();
 
-		for (int i = 0; i < 5; i++) {
-			controle.DiminuirSom();
-		}
+		controle.MostrarMenu();
+
+		controle.DiminuirSom();
+		controle.Pausar();
+		controle.DesligarTV();
 
 		controle.MostrarMenu();
 
