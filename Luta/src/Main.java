@@ -15,15 +15,13 @@ public class Main {
 
 
 
-		Lutadores.get(0).MostarLutador();
-		Lutadores.get(5).MostarLutador();
+
 
 		Lutar lutas = new Lutar();
-		lutas.MarcarLuta(Lutadores.get(5),Lutadores.get(0));
+		lutas.MarcarLuta(Lutadores.get(0),Lutadores.get(5));
 		lutas.RealizarLuta(2);
 
-		Lutadores.get(0).Resultados();
-		Lutadores.get(5).Resultados();
+
 
 
 	}

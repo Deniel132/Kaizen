@@ -49,6 +49,12 @@ public class Lutar {
 		int vitoria;
 
 		if (Aprovada){
+
+			getDesafiante().MostarLutador();
+			getDesafiado().MostarLutador();
+
+
+
 			do {
 				vitoria = aleatorio.nextInt(20);
 
@@ -85,6 +91,9 @@ public class Lutar {
 
 
 			}while (getRounds() > 0);
+
+			getDesafiante().Resultados();
+			getDesafiado().Resultados();
 
 
 		}else{
