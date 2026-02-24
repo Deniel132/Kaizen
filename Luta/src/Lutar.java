@@ -55,12 +55,16 @@ public class Lutar {
 
 				if (vitoria >= 15){
 
-					System.out.println("\nVitoria de : " + getDesafiante().getNome());
+					System.out.println("\n=============================");
+					System.out.println("Vitoria de : " + getDesafiante().getNome());
+					System.out.println("=============================");
 					getDesafiante().Ganhar();
 					getDesafiado().Perder();
 					break;
 				}else if (vitoria >= 10){
-					System.out.println("\nVitoria de : " + getDesafiado().getNome());
+					System.out.println("\n=============================");
+					System.out.println("Vitoria de : " + getDesafiado().getNome());
+					System.out.println("=============================");
 					getDesafiado().Ganhar();
 					getDesafiante().Perder();
 					break;
@@ -70,7 +74,9 @@ public class Lutar {
 
 
 				if(getRounds() <= 0){
-					System.out.println("\nEmpate ");
+					System.out.println("\n=============================");
+					System.out.println("Empate ");
+					System.out.println("=============================");
 					getDesafiado().Empatar();
 					getDesafiante().Empatar();
 
@@ -82,7 +88,9 @@ public class Lutar {
 
 
 		}else{
-			System.out.println("\nLuta Nao Pode Acontecer");
+			System.out.println("\n=============================");
+			System.out.println("Luta Nao Pode Acontecer");
+			System.out.println("=============================");
 		}
 
 	}
