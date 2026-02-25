@@ -12,23 +12,12 @@ public class Main {
 		scanner.nextLine();
 
 
-		Integer ParteInteira = Valor.intValue();
-		Integer ParteDecimal = BigDecimal.valueOf(Valor.doubleValue() - Valor.intValue()).movePointRight(2).intValue();
-		System.out.println(ParteDecimal);
-		System.out.println(ParteInteira);
-
-
-		Cedulas notas = new Cedulas(ParteInteira);
-		Moedas moeda = new Moedas(ParteDecimal, notas.getMoedasDe1());
-
-		System.out.println("AAA: " +notas.getMoedasDe1());
-		System.out.println("\n=================\n");
-		notas.ContaCedulas();
-		notas.MostrarCedulas();
+		Saque saqueDinheiro = new Saque(Valor);
 
 		System.out.println("\n=================\n");
-		moeda.ContaMoedas();
-		moeda.MostrarMoedas();
+		saqueDinheiro.MostrarValores();
+		System.out.println("\n=================\n");
+
 
 
 
