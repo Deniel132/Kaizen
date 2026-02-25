@@ -1,16 +1,18 @@
 public class Cedula {
-	private String 	Valor;
+	private String 	Descricao;
+	private Integer Valor;
 	private Integer Quantidade;
 	private Integer TotalNoCaixa;
 
 
-	public Cedula(String Valor,Integer Quantidade,Integer TotalNoCaixa){
+	public Cedula(String Descricao,Integer Valor,Integer Quantidade,Integer TotalNoCaixa){
+		this.Descricao = Descricao;
 		this.Valor = Valor;
 		this.Quantidade = Quantidade;
 		this.TotalNoCaixa = TotalNoCaixa;
 	}
 
-	public String getValor() {
+	public Integer getValor() {
 		return Valor;
 	}
 
@@ -18,8 +20,8 @@ public class Cedula {
 		return Quantidade;
 	}
 
-	public void setValor(String valor) {
-		Valor = valor;
+	public void setValor(Integer valor) {
+		this.Valor = valor;
 	}
 
 	public void setQuantidade(Integer quantidade) {
@@ -31,6 +33,15 @@ public class Cedula {
 	}
 
 	public void setTotalNoCaixa(Integer totalNoCaixa) {
-		TotalNoCaixa = totalNoCaixa;
+		this.TotalNoCaixa = totalNoCaixa;
+	}
+
+
+	public String getDescricao() {
+		return Descricao;
+	}
+
+	public void setDescricao(String descricao) {
+		Descricao = descricao;
 	}
 }

@@ -1,20 +1,22 @@
 public class Moeda {
 
-	private String Valor;
+	private String Descricao;
+	private Integer Valor;
 	private Integer Quantidade;
 	private Integer TotalNoCaixa;
 
-	public Moeda(String valor, Integer quantidade,Integer TotalNoCaixa) {
+	public Moeda(String Descricao,Integer valor, Integer quantidade,Integer TotalNoCaixa) {
+		this.Descricao = Descricao;
 		this.Valor = valor;
 		this.Quantidade = quantidade;
 		this.TotalNoCaixa = TotalNoCaixa;
 	}
 
-	public String getValor() {
+	public Integer getValor() {
 		return Valor;
 	}
 
-	public void setValor(String valor) {
+	public void setValor(Integer valor) {
 		this.Valor = valor;
 	}
 
@@ -31,6 +33,14 @@ public class Moeda {
 	}
 
 	public void setTotalNoCaixa(Integer totalNoCaixa) {
-		TotalNoCaixa = totalNoCaixa;
+		this.TotalNoCaixa = totalNoCaixa;
+	}
+
+	public String getDescricao() {
+		return Descricao;
+	}
+
+	public void setDescricao(String descricao) {
+		Descricao = descricao;
 	}
 }

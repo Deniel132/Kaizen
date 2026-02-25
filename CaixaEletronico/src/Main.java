@@ -21,6 +21,8 @@ public class Main {
 		Cedulas notas = new Cedulas(ParteInteira);
 		Moedas moeda = new Moedas(ParteDecimal, notas.getMoedasDe1());
 
+		System.out.println("AAA: " +notas.getMoedasDe1());
+		System.out.println("\n=================\n");
 		notas.ContaCedulas();
 		notas.MostrarCedulas();
 
