@@ -8,8 +8,6 @@ public class MenuInicial {
 	private String numeroDaAgenciaASacar;
 	private String numeroDaContaADepositar;
 	private String numeroDaAgenciaADepositar;
-	private String nomeDoTitular;
-	private BigDecimal SaldoEmConta;
 	private BigDecimal valor;
 
 
@@ -154,6 +152,9 @@ public class MenuInicial {
 	}
 
 	public void menuAbrirrConta(){
+
+		String nomeDoTitular;
+		BigDecimal SaldoEmConta;
 
 		System.out.println("\n============================");
 
