@@ -117,8 +117,12 @@ public class Operacoes {
 			transassaoRealizada = true;
 		}else {
 			System.out.println("Transferencia nao Autorisada");
-			contaDoSaque.setSaldo(contaDoSaque.getSaldo().add(valorDoSaqueDaTransferencia));
-			contaDoDeposito.setSaldo(contaDoDeposito.getSaldo().subtract(valorDoDepositoDaTransferencia));
+			if (saqueRealizado) {
+				contaDoSaque.setSaldo(contaDoSaque.getSaldo().add(valorDoSaqueDaTransferencia));
+			} else if (depositoRealizado) {
+				contaDoDeposito.setSaldo(contaDoDeposito.getSaldo().subtract(valorDoDepositoDaTransferencia));
+			}
+
 		}
 
 	}

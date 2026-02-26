@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Abstrato/Abstrato.iml" filepath="$PROJECT_DIR$/Abstrato/Abstrato.iml" />
       <module fileurl="file://$PROJECT_DIR$/AgenciaBancaria/AgenciaBancaria.iml" filepath="$PROJECT_DIR$/AgenciaBancaria/AgenciaBancaria.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AtividadeVideo/AtividadeVideo.iml" filepath="$PROJECT_DIR$/AtividadeVideo/AtividadeVideo.iml" />
       <module fileurl="file://$PROJECT_DIR$/AtividadesJava.iml" filepath="$PROJECT_DIR$/AtividadesJava.iml" />
       <module fileurl="file://$PROJECT_DIR$/CaixaEletronico/CaixaEletronico.iml" filepath="$PROJECT_DIR$/CaixaEletronico/CaixaEletronico.iml" />
       <module fileurl="file://$PROJECT_DIR$/Conta/Conta.iml" filepath="$PROJECT_DIR$/Conta/Conta.iml" />
