@@ -140,7 +140,12 @@ public class MenuInicial {
 
 			System.out.println("============================\n");
 
+
 			vincularAoBanco.removerConta(numeroDaContaASacar,numeroDaAgenciaASacar);
+
+			System.out.println("\n============================");
+			System.out.println("Conta Excluida!!!");
+			System.out.println("============================\n");
 
 		}else {
 			System.out.println("Nenhuma Conta Cadastrada");
@@ -169,6 +174,9 @@ public class MenuInicial {
 
 		vincularAoBanco.setContasNoBanco(new Contas(numeroDaContaASacar,numeroDaAgenciaASacar,nomeDoTitular,SaldoEmConta,""));
 
+		System.out.println("\n============================");
+		System.out.println("Conta Criada!!!");
+		System.out.println("============================\n");
 	}
 
 	public void menuInvalida(){
