@@ -55,4 +55,11 @@ public class Contas {
 	public void setStatus(String status) {
 		Status = status;
 	}
+
+	public void exibirRelatorio(){
+		System.out.println("\n=====================");
+		System.out.println("Nome.: " + getNomeDoTitular());
+		System.out.println("Saldo: " + getSaldo());
+		System.out.println("=====================\n");
+	}
 }

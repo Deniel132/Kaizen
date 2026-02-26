@@ -6,10 +6,5 @@ public class Main {
         MenuInicial menu = new MenuInicial();
 
 		menu.AbrirMenu();
-
-
-
-
-
 	}
 }
