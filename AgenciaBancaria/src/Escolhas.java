@@ -5,8 +5,7 @@ public enum Escolhas {
 	FECHARCONTA(4),
 	ABRIRCONTA(5),
 	LISTARCONTAS(6),
-	SAIR(7),
-	INVALIDA(8);
+	INVALIDA(7);
 
 	private final int valor;
 

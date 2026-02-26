@@ -6,9 +6,9 @@ public class Contas {
 	private String 		numeroDaConta;
 	private String 		nomeDoTitular;
 	private BigDecimal 	saldo;
-	private String 		Status;
+	private Status 		Status;
 
-	public Contas(String numeroDaAgencia, String numeroDaConta, String nomeDoTitular, BigDecimal saldo, String status) {
+	public Contas(String numeroDaConta , String numeroDaAgencia, String nomeDoTitular, BigDecimal saldo, Status status) {
 		this.numeroDaAgencia = numeroDaAgencia;
 		this.numeroDaConta = numeroDaConta;
 		this.nomeDoTitular = nomeDoTitular;
@@ -48,11 +48,11 @@ public class Contas {
 		this.saldo = saldo;
 	}
 
-	public String getStatus() {
+	public Status getStatus() {
 		return Status;
 	}
 
-	public void setStatus(String status) {
+	public void setStatus(Status status) {
 		Status = status;
 	}
 
