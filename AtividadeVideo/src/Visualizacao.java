@@ -33,7 +33,7 @@ public class Visualizacao {
 
 	public Visualizacao(Video videoAssistido, Gafanhoto espectador) {
 		this.videoAssistido = videoAssistido;
-		Espectador = espectador;
+		this.Espectador = espectador;
 		this.Espectador.setTotAssistido(Espectador.getTotAssistido() + 1);
 		this.videoAssistido.setViews(videoAssistido.getViews() + 1);
 	}

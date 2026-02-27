@@ -26,7 +26,7 @@ public class Video implements AcoesVideo{
 
 	public Video(String titulo) {
 		this.titulo = titulo;
-		this.avaliacoes = 0;
+		this.avaliacoes = 1;
 		this.views = 0;
 		this.reproduzindo = false;
 	}
@@ -43,10 +43,8 @@ public class Video implements AcoesVideo{
 		return avaliacoes;
 	}
 
-	public void setAvaliacoes(Integer avaliacoes) {
-		BigDecimal nota = BigDecimal.valueOf(this.avaliacoes).add(BigDecimal.valueOf(avaliacoes)).divide(BigDecimal.valueOf(getViews()));
-
-		this.avaliacoes = nota.intValue();
+	public void setAvaliacoes(Integer nota) {
+		this.avaliacoes = (avaliacoes + nota) / views;
 	}
 
 	public Integer getViews() {
